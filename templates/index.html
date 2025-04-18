@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Dine | Fine Dining Experience</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">The Royal Dine</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reservations">Reservations</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Royal Dine</h1>
+            <p>Experience culinary excellence</p>
+            <a href="#reservations" class="cta-button">Book a Table</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Founded in 2025,Royal Dine has been serving exceptional Indian cuisine for over three decades. Our commitment to quality ingredients and authentic recipes has made us a cornerstone of fine dining in the city.</p>
+                <p>Every dish tells a story of tradition, innovation, and passion for culinary excellence.</p>
+            </div>
+            <div class="about-images">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500" alt="Restaurant interior">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500" alt="Chef preparing food">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-tabs">
+            <button class="menu-tab active" data-category="starters">Starters</button>
+            <button class="menu-tab" data-category="mains">Main Course</button>
+            <button class="menu-tab" data-category="desserts">Desserts</button>
+            <button class="menu-tab" data-category="drinks">Drinks</button>
+        </div>
+        <div class="menu-content">
+            <!-- Starters -->
+            <div class="menu-category active" data-category="starters">
+                <div class="menu-item">
+                    <img src="../static/images/tomato-soup.jpg" alt="French Onion Soup">
+                    <div class="menu-item-content">
+                        <h3>Tomato Soup</h3>
+                        <p>Classic soup with caramelized onions, rich beef broth, and melted Gruyère</p>
+                        <span class="price">₹110</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../static/images/panner.jpg" alt="Escargots">
+                    <div class="menu-item-content">
+                        <h3>Panner Tikka</h3>
+                        <p>Paneer Tikka is a Punjabi snack made with paneer cubes </p>
+                        <span class="price">₹190</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mains -->
+            <div class="menu-category" data-category="mains">
+                <div class="menu-item">
+                    <img src="../static/images/Hyderabadi-Biryani.jpg" alt="Beef Bourguignon">
+                    <div class="menu-item-content">
+                        <h3>Hyderbadi Biryani</h3>
+                        <p>Biryani is a mixed rice dish popular in South Asia</p>
+                        <span class="price">₹250</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../static/images/pie.webp" alt="Coq au Vin">
+                    <div class="menu-item-content">
+                        <h3>Tomato Roasted Pie</h3>
+                        <p>This savory pie calls for roasting tomatoes to concentrate their flavor</p>
+                        <span class="price">₹284</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-category" data-category="desserts">
+                <div class="menu-item">
+                    <img src="../static/images/ras-malai.jpg" alt="Crème Brûlée">
+                    <div class="menu-item-content">
+                        <h3>Ras Malai</h3>
+                        <p>Dessert that originated in the Bengal region of Indian subcontinent</p>
+                        <span class="price">₹220</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../static/images/gulab-jamun.jpg" alt="Tarte Tatin">
+                    <div class="menu-item-content">
+                        <h3>Gulab Jamun</h3>
+                        <p>Gulab jamun is a sweet confectionery or dessert</p>
+                        <span class="price">₹210</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu-category" data-category="drinks">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=500" alt="Wine Selection">
+                    <div class="menu-item-content">
+                        <h3>Wine Selection</h3>
+                        <p>Curated selection of French wines</p>
+                        <span class="price">₹90</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=500" alt="Cocktails">
+                    <div class="menu-item-content">
+                        <h3>Signature Cocktails</h3>
+                        <p>House-crafted cocktails</p>
+                        <span class="price">₹120</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid" id="lightgallery">
+            
+            <a href="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200" class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500" alt="Restaurant interior">
+            </a>
+            <a href="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200" class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500" alt="Chef preparing food">
+            </a>
+            <a href="https://images.unsplash.com/photo-1544025162-d76694265947?w=1200" class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=500" alt="Beef Bourguignon">
+            </a>
+            <a href="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=1200" class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=500" alt="Crème Brûlée">
+            </a>
+            <a href="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=1200" class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=500" alt="Wine Selection">
+            </a>
+            <a href="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=1200" class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=500" alt="Cocktails">
+            </a>
+
+            <a href="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=1200" class="gallery-item">
+                <img src="../static/images/gallery1.png" alt="Cocktails">
+            </a>
+
+            <a href="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=1200" class="gallery-item">
+                <img src="../static/images/gallery2.jpg" alt="Cocktails">
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="reservations">
+        <h2>Make a Reservation</h2>
+        <form id="reservationForm" class="reservation-form">
+            <div class="form-group">
+                <input type="text" id="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" required placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" id="date" required placeholder="Select Date">
+            </div>
+            <div class="form-group">
+                <input type="text" id="time" required placeholder="Select Time">
+            </div>
+            <div class="form-group">
+                <select id="guests" required>
+                    <option value="">Number of Guests</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6">6 People</option>
+                    <option value="7">7 People</option>
+                    <option value="8">8 People</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea id="special-requests" placeholder="Special Requests (Optional)"></textarea>
+            </div>
+            <button type="submit" class="submit-button">Book Now</button>
+        </form>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Guests Say</h2>
+        <div class="testimonials-carousel">
+            <div class="testimonial-slide active">
+                <div class="testimonial-content">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="Customer 1" class="testimonial-image">
+                    <p>"An exceptional dining experience! The attention to detail in every dish was remarkable."</p>
+                    <h4>Akhil Preetham</h4>
+                    <span class="rating">★★★★★</span>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <img src="https://i.pravatar.cc/150?img=2" alt="Customer 2" class="testimonial-image">
+                    <p>"The wine pairing suggestions were perfect, and the service was impeccable."</p>
+                    <h4>Narayana</h4>
+                    <span class="rating">★★★★★</span>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <img src="https://i.pravatar.cc/150?img=3" alt="Customer 3" class="testimonial-image">
+                    <p>"A truly memorable evening. The ambiance and food were both outstanding."</p>
+                    <h4>Ram Charan</h4>
+                    <span class="rating">★★★★★</span>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Chalasani Nagar, Kanuru<br>Vijayawada, 520010</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Hours</h3>
+                    <p>Mon-Thu: 11am - 10pm<br>Fri-Sun: 11am - 11pm</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Contact</h3>
+                    <p>Phone:(+91) 999988881<br>Email: pvp@yahoo.com</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.186143685903!2d80.69155787590492!3d16.487665684257267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fb3d5f7810a9%3A0x4a6d6804b71db09!2sPrasad%20V.%20Potluri%20Siddhartha%20Institute%20Of%20Technology!5e0!3m2!1sen!2sin!4v1712573777607!5m2!1sen!2sin" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Royal Dine</h3>
+                <p>Experience the finest French cuisine in an elegant atmosphere.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservations">Reservations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Royal Dine. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
